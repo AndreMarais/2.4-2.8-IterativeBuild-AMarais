@@ -21,8 +21,8 @@ h1{
 
 .grid-container{
 	display: grid;
-	grid-template-columns: 1550px 450px;
-	grid-template-rows: 289px 50px auto 50px;
+	grid-template-columns: auto 450px;
+	grid-template-rows: 289px 100px auto 100px;
 	height: 200px;
 	background-color: black;
 	
@@ -36,7 +36,7 @@ h1{
 	grid-column-end: span 1;
 	border-radius: 15px;
 	background-color: Red;
-	background-image: url("../images/Test Logo 2.jpg");
+	background-image: url("../images/est Logo 2.jpg");
 	border: solid black 2px;
 }
 
@@ -66,7 +66,7 @@ a{
 	padding-left: 100px;
 	padding-right: 100px;
 	color: Black;
-	background-color: purple;
+	background-color: Purple;
 	border-radius: 15px;
 	border: solid black 2px;
 }
@@ -85,8 +85,8 @@ a{
 	grid-column-start: 2;
 	border-radius: 15px;
 	border: solid black 2px;
-	background-color: Green;
-	background-image: url("../images/TW LOGO.png");
+	background-color: White;
+	background-image: url("../images/W LOGO.png");
 }
 
 .footer{
