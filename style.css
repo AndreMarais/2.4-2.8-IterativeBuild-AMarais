@@ -2,41 +2,51 @@ html{
 	background-color: black;
 }
 
-p1{
-	font-size: 20px;
-}
-
 p{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 5px;
 	font-size: 25px;
+	font-family: "Anton", sans-serif;
 }
 
 h3{
 	font-size: 40px;
+	Background-color: white;
+	border-radius: 5px;
+	font-family: "Permanent Marker", cursive;
+}
+
+h2{
+	Background-color: white;
+	border-radius: 5px;
+	padding-left: 10px;
 }
 
 h1{
 	font-size: 60px;
-	font-family: "Times New Roman", Times, serif;
+	Background-color: white;
+	border-radius: 5px;
+	font-family: "Permanent Marker", cursive;
 }
 
 .grid-container{
 	display: grid;
-	grid-template-columns: auto 450px;
-	grid-template-rows: 289px 100px auto 100px;
+	grid-template-columns: auto auto 275px;
+	grid-template-rows: 350px 50px auto 50px;
 	height: 200px;
 	background-color: black;
 	
 }
 
 .header{
-	padding-left: 20px;
-	box-sizing: border-box;
-	background-size: 100%;
 	grid-column-start: 1;
-	grid-column-end: span 1;
+	grid-column-end: span 2;
+	grid-row-start: 1;
 	border-radius: 15px;
 	background-color: Red;
-	background-image: url("../images/est Logo 2.jpg");
+	background-image: url("../images/TawaLOGO.JPG");
+	background-size: cover;
 	border: solid black 2px;
 }
 
@@ -46,35 +56,42 @@ h1{
 	grid-row-start: 2;
 	grid-column-start: 1;
 	border: solid black 2px;
-	background-color: Cyan;
+	background-color: #0047CE;
 	border-radius: 15px;
 }
 
 a{
+	font-family: "Anton", sans-serif;
 	text-decoration: none;
 	font-size: 25px;
 	Background-color: White;
 	border-radius: 5px;
+	padding-left: 3px;
+	padding-right: 3px;
 }
 	a:link {color: Purple;} /* unvisited link */
 	a:visited {color: Black;} /* visited link */
-	a:hover {color: Gray;} /* mouse over link */
+	a:hover {color: white; background-color: Black;} /* mouse over link */
 
 .scroll-area{
 	grid-row-start: 3;
 	grid-column-start: 1;
-	padding-left: 100px;
-	padding-right: 100px;
+	padding-left: 25px;
+	padding-right: 25px;
 	color: Black;
-	background-color: Purple;
+	background-color: #0047CE;
 	border-radius: 15px;
 	border: solid black 2px;
 }
 .photo{
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 25px;
+	padding-bottom: 25px;
 	grid-row-start: 2;
 	grid-row-end: span 3;
-	grid-column-start: 2;
-	background-color: blue;
+	grid-column-start: span 2;
+	background-color: #0047CE;
 	border-radius: 15px;
 	border: solid black 2px;
 }
@@ -82,17 +99,18 @@ a{
 .logo{
 	padding-left: 20px;
 	grid-row-start: 1;
-	grid-column-start: 2;
+	grid-column-start: 3;
 	border-radius: 15px;
 	border: solid black 2px;
 	background-color: White;
-	background-image: url("../images/W LOGO.png");
+	background-image: url("../images/TW LOGO.png");
+	background-size: cover;	
 }
 
 .footer{
 	padding-left: 10px;
 	padding-top: 10px;
-	background-color: Teal;
+	background-color: #0047CE;
 	grid-column-start: 1;
 	grid-row-start: 4;
 	color: black;
@@ -103,17 +121,17 @@ a{
 /* To set up and call a Class from the HTML File we use a . in the CSS.*/
 .slider {
     position: relative;
-    width: 78.6%;  /* adjustment to show each image on carousel. */
+    width: ;  /* adjustment to show each image on carousel. */
     overflow: hidden;  /* overflow hides next image. */
 }
 .images {
-    display: fill;
+    display: cover;
 }
 .images img {
-    transition: all 0.15s ease;  /* timing transition to show next image. */
+    transition: all 0.5s ease;  /* timing transition to show next image. */
 	border-radius: 15px;
-	max-width: 200px;
-	max-height: 100px;
+	max-width: 100px;
+	height: 100px;
 }
 .images input {
     display: none;  /* display none hides the 3 images behind 1st image. */
@@ -127,10 +145,10 @@ a{
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    border: solid Black 4px;
+    border: solid Black 5px;
     cursor: pointer;
     transition: all 0.30s ease;  /* timing transition to show next image. */
-    margin: 5px;
+    margin: 10px;
 }
 .dots label:hover {background: black;}
 
@@ -152,10 +170,9 @@ a{
 #myBtn{
 	display: ;
 	position: fixed;
-	bottom: 20px; 
-	right: 30px;
+	bottom: 2px; 
+	right: 10px;
 	z-index: 99; /* z-index brings the element (button) to the front. */
-	font-size: 18px;
 	border: none;
 	outline: none;
 	Background-color: Yellow;
@@ -163,10 +180,12 @@ a{
 	cursor: pointer;
 	padding: 15px;
 	border-radius: 15px;
-	Font-size: 50px;
+	Font-size: 40px;
 }
 
 #myBtn:hover{
 	cursor: pointer;
+	background-color: Green; /* Calling up my Variable Color to be used. */
+}
 	background-color: Green; /* Calling up my Variable Color to be used. */
 }
