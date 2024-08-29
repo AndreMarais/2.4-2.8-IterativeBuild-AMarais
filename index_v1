@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>EOTC</title>
+		<meta charset="utf-8">
+		<meta name="Keywords" content="Nature, Tawa College, EOTC, Education, Outdoor Activaties"/>
+		<meta name="Author" content="André Marais"/>
+		<meta name="Description" content="EOTC"/>
+		<meta name="viewport" content="with=device-with, initial-scale=1"/>
+		
+		<!-- import the webpage's stylesheet -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<!-- main webpage content starts here -->
+	<body>
+		<div class="grid-container">
+			<div class="header">
+				
+			</div>
+			
+			<div class="logo">
+				
+			</div>
+			
+			<div class="nav">
+				
+			</div>
+			
+			<div class="scroll-area">
+		  
+			</div>	
+			
+			<div class="photo">
+				<div class="images">
+
+				</div>
+				<!-- Setup Class to hold and control Radio input Buttons to move each image. -->
+				<div class="dots">
+
+				</div>	
+			</div>
+			
+			<div class="footer">
+			  
+			</div>
+			
+			<div>
+				<!-- Back to top button here -->
+				<button onclick="topFunction()" id="myBtn" title="Go to top">▲</button>
+				<script type="text/javascript" src="js/backtotop.js"></script>
+			</div>
+		</div>
+	</body>
+</html>
