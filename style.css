@@ -32,8 +32,8 @@ h1{
 
 .grid-container{
 	display: grid;
-	grid-template-columns: auto auto 275px;
-	grid-template-rows: 350px 50px auto 50px;
+	grid-template-columns: auto 200px 353px;
+	grid-template-rows: auto 50px auto 50px;
 	height: 200px;
 	background-color: black;
 	
@@ -45,9 +45,10 @@ h1{
 	grid-row-start: 1;
 	border-radius: 15px;
 	background-color: Red;
-	background-image: url("../images/TawaLOGO.JPG");
+	background-image: url("../images/College Drone Shot.jpg");
 	background-size: cover;
 	border: solid black 2px;
+	padding-left: 50px;
 }
 
 .nav{
@@ -83,27 +84,14 @@ a{
 	border-radius: 15px;
 	border: solid black 2px;
 }
-.photo{
-	padding-left: 25px;
-	padding-right: 25px;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	grid-row-start: 2;
-	grid-row-end: span 3;
-	grid-column-start: span 2;
-	background-color: #0047CE;
-	border-radius: 15px;
-	border: solid black 2px;
-}
 
 .logo{
-	padding-left: 20px;
+	padding-top: 35px;
 	grid-row-start: 1;
 	grid-column-start: 3;
 	border-radius: 15px;
 	border: solid black 2px;
 	background-color: White;
-	background-image: url("../images/TW LOGO.png");
 	background-size: cover;	
 }
 
@@ -118,30 +106,35 @@ a{
 	border: solid black 2px;
 }
 
-/* To set up and call a Class from the HTML File we use a . in the CSS.*/
-.slider {
-    position: relative;
-    width: ;  /* adjustment to show each image on carousel. */
+.photo{
+	grid-row-start: 2;
+	grid-row-end: span 3;
+	grid-column-start: span 2;
+	background-color: #0047CE;
+	border-radius: 15px;
+	border: solid black 2px;
+	overflow: hidden;
+}
+
+.images{
+	max-height: 1000px;
+	width: 2200px;  /* adjustment to show each image on carousel. */
     overflow: hidden;  /* overflow hides next image. */
 }
-.images {
-    display: cover;
+.images img{
+	display: cover;
+    transition: all 0.20s ease;  /* timing transition to show next image. */
+	border-radius: 13px;
+	height: 1000px;
 }
-.images img {
-    transition: all 0.5s ease;  /* timing transition to show next image. */
-	border-radius: 15px;
-	max-width: 100px;
-	height: 100px;
-}
-.images input {
+.images input{
     display: none;  /* display none hides the 3 images behind 1st image. */
 }
-.dots {
+.dots{
     display: flex;
-    justify-content: center;
     margin: 5px;
 }
-.dots label {
+.dots label{
     height: 20px;
     width: 20px;
     border-radius: 50%;
@@ -150,25 +143,26 @@ a{
     transition: all 0.30s ease;  /* timing transition to show next image. */
     margin: 10px;
 }
+
 .dots label:hover {background: black;}
 
-#img1:checked ~ .m1 {  /* ~ (tilde) is a selector used to select each "m" element following checked. */
-    margin-left: 0;
+#img1:checked ~ .m1{  /* ~ (tilde) is a selector used to select each "m" element following checked. */
+    margin-left: 0%;
 }
-#img2:checked ~ .m2 {
-    margin-left: -100%;
+#img2:checked ~ .m2{
+    margin-left: -25.16%;
 }
-#img3:checked ~ .m3 {
-    margin-left: -200%;  /* margin-left value moves each image to the Left. */
+#img3:checked ~ .m3{
+    margin-left: -50.35%;  /* margin-left value moves each image to the Left. */
 }
-#img4:checked ~ .m4 {
-    margin-left: -300%;
+#img4:checked ~ .m4{
+    margin-left: -75.52%;
 }
 
 /* CSS for styling Back to top button. */
 
 #myBtn{
-	display: ;
+	display: none;
 	position: fixed;
 	bottom: 2px; 
 	right: 10px;
@@ -185,7 +179,5 @@ a{
 
 #myBtn:hover{
 	cursor: pointer;
-	background-color: Green; /* Calling up my Variable Color to be used. */
-}
 	background-color: Green; /* Calling up my Variable Color to be used. */
 }
